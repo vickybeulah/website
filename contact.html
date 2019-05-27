@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title><meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+</head>
+<style type="text/css">
+  .hello{
+width: 60.7%;
+margin-left:250px;
+margin-top:10px;
+border:0px solid red;
+height:100px;
+background-color:  #e8e9ed;
+z-index: 1;
+
+}
+#dis1  td, th {
+  border: 0px solid black;
+
+}
+
+.hello table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+.hello th {
+  height: 40px;
+}
+</style>
+<body  style="background-image: url(images/bg2.jpeg); ">
+
+  <nav class="navbar navbar-inverse navbar-fixed">
+  <div class="container-fluid navcolor">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+            <img src="images/logo1.gif" height=50px width=120px style="margin-left: -20px;" >
+    </div>
+    <div class="collapse navbar-collapse navcolor" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right ">
+        <li class="navcolor nav-link"><a  href="index.html">HOME</a></li>
+        <li class="nav-link"><a  href="#band">SERVICES</a></li>
+        <li class="nav-link"><a  href="#tour">CARRERS</a></li>
+        <li class="nav-link"><a  href="#contact">ABOUTUS</a></li>
+        <li class="active nav-link"><a  href="contactus.html">CONTACTUS</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+	<div class="container well">
+		<h1 align="center">CONTACT US</h1>
+		<br><br>
+		<form class="form-inline">
+			<div class="row">
+				<div class="col-lg-3"></div>
+				<div class="form-group col-lg-3">
+    				<label for="fname">Firstname:</label><br>
+
+    				<input type="text" class="form-control" id="fname" onkeypress="return (event.charCode > 64 && 
+  event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" > <br>
+  <span id="s1"  class="bg-warning" style="color:red"></span>
+            
+  				</div>
+  				<div class="form-group col-lg-6">
+    				<label for="lname">Lastname:</label><br>
+    				<input type="text" class="form-control" id="lname" onkeypress="return (event.charCode > 64 && 
+  event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"> <br>
+             <span id="s2"  class="bg-warning" style="color:red"></span>
+  				</div>
+  			</div>
+  			<br><br>
+  			<div class="row">
+				<div class="col-lg-3"></div>
+				<div class="form-group col-lg-3">
+    				<label for="dob">Date of Birth:</label><br>
+    				<input type="date" class="form-control" id="dob" required><br>
+             <span id="s4" class="bg-warning" style="color:red"></span>
+  				</div>
+  				<div class="col-lg-6">
+  					<label>Gender:</label><br>
+    				<label class="radio-inline">
+    				  <input type="radio" name="optradio" class="gen" value="male" >Male
+    				</label>
+    				<label class="radio-inline">
+    				  <input type="radio" name="optradio" class="gen"value="female">Female
+    				</label><br>
+             <span id="g1"  class="bg-warning" style="color:red"></span> 
+    			</div>
+  			</div>
+  			<br><br>
+  			<div class="row">
+				<div class="col-lg-3"></div>
+				<div class="form-group col-lg-3">
+    				<label for="phno">Moblie:</label><br>
+    				<input type="text" class="form-control" id="phno"><br>
+             <span id="s5"  class="bg-warning" style="color:red"></span>
+  				</div>
+  				<div class="form-group col-lg-6">
+    				<label for="address">address:</label><br>
+    				<textarea class="form-control" id="address"></textarea><br>
+             <span id="s6"  class="bg-warning" style="color:red"></span>
+  				</div>
+          
+  			</div>
+  			<br><br>
+  			<div class="col-lg-5"></div>
+  			<div class="col-lg-7">
+  			<input type="button" class="btn btn-primary" value="submit" name="submit" onclick="validation()"style="background-color: skyblue;">
+  			</div>
+		</form>
+	</div>
+	<div class="container col-lg-12" >  </div>
+  <table id="display" class="table table-bordered ">
+  
+  <tr id="dis1" align="center">
+    <th>Name</th> 
+    <th>dob</th>   
+    <th>Gender</th>  
+    <th>mobile</th> 
+    <th>Address</th> 
+     
+  </tr>
+<!-- <tr id="disc2">
+
+    <td id="d1"></td>
+  
+    <td id="d2"></td>
+  
+    <td id="d3"></td>
+  
+    <td id="d4"></td>
+  
+    <td id="d5"></td>
+
+    <td id="d6"></td>
+    
+    <td id="d7"></td>
+  </tr> -->
+</table>
+
+</body>
+</body>
+</html>
